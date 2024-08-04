@@ -1,0 +1,58 @@
+html{
+    --secondary-color: #162e44;
+}
+
+
+
+@media (max-width: 1920px){  
+}
+@media (max-width: 1710px){
+}
+@media (max-width: 1680px){
+}
+@media (max-width: 1550px){
+    html{font-size: 15px;}
+}
+@media (max-width: 1470px){
+    html{font-size: 14.9px;}
+}
+@media (max-width: 1400px){
+    html{font-size: 14px;}
+}
+@media (max-width: 1300px){
+    html{font-size: 13px;}
+}
+@media (max-width: 1250px){
+}
+@media (max-width: 1200px){
+}
+@media (max-width: 1199px){
+      
+}
+@media (max-width: 1170px){
+    .container {
+        max-width: 80rem;
+    }
+}
+@media (max-width: 992px){
+    html {
+        font-size: 12px;
+    }    
+}
+@media (max-width: 767px){ 
+    html {
+        font-size: 13.6px;
+    }     
+    .sidebar_opened{
+        overflow: hidden;
+    }
+    .section_title .title_small{
+        font-size: 1rem;
+    }
+    .section_title .title_big{
+        font-size: 1.5rem;
+    }
+    .contact_inr {flex-direction: column-reverse;}
+    .contact_inr > .w-1\/2 {width: 100%;}
+    .fcioaz.contact_us_address .left_sec .booking_problem_img {top: 25%;}
+}

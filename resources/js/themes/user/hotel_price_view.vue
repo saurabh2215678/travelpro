@@ -1,0 +1,1 @@
+<template>Hotel Price View</template>

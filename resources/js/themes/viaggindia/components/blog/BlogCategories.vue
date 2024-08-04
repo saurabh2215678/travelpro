@@ -1,0 +1,27 @@
+<template>
+    <CategoriesWrapper class="blog_categories">
+        <h4>{{showLangTitle('Categories')}}</h4>
+        <ul>
+            <li v-for="item in data"><Link :href="item.cat_url">{{ item.category_name }}</Link></li>
+        </ul>
+    </CategoriesWrapper>
+</template>
+<script>
+import { Link } from "@inertiajs/inertia-vue3";
+import { CategoriesWrapper } from '../../styles/CategoriesWrapper';
+import {showLangTitle} from '../../utils/commonFuntions';
+export default {
+    name:'BlogCategories',
+    created(){
+        console.log('category data=', this.data);
+    },
+    methods: {
+        showLangTitle,
+    },
+    components:{
+        CategoriesWrapper,
+        Link
+    },
+    props: ['data']
+}
+</script>

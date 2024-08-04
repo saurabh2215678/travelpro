@@ -1,0 +1,1 @@
+<template>Left Sidebar Route</template>

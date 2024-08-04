@@ -1,0 +1,27 @@
+image: atlassian/default-image:2
+pipelines:
+  branches:
+    andamanisland:
+      - step:
+          name: Deploy travipro folder
+          script:
+            - pipe: atlassian/ftp-deploy:0.7.0
+              debug: true
+              variables:
+                USER: $FTP_USERNAME
+                PASSWORD: $FTP_PASSWORD
+                SERVER: $FTP_SERVER
+                HOST: $FTP_HOST
+                REMOTE_PATH: /travelpro
+                LOCAL_PATH: /
+      - step:
+          name: Deploy public folder to public_html
+          script:
+            - pipe: atlassian/ftp-deploy:0.7.0
+              variables:
+                USER: $FTP_USERNAME
+                PASSWORD: $FTP_PASSWORD
+                SERVER: $FTP_SERVER
+                HOST: $FTP_HOST
+                REMOTE_PATH: /public_html
+                LOCAL_PATH: /public

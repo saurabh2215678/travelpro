@@ -1,0 +1,1 @@
+<template>Hotel Voucher View</template>

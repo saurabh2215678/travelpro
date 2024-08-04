@@ -1,0 +1,51 @@
+import styled from "vue3-styled-components";
+
+export const formWrapper = styled.div`
+& .common_main_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+& .book-space select.form-select.country_code {
+    width: 4.5rem;
+    padding: 0.4rem;
+}
+& .phone_code {
+    & label {
+        display: block;
+        width: 100%;
+    }
+    & .form-control.phone {
+        width: calc(100% - 5rem);
+    }
+}
+& .form-floating {
+    padding: 0 0.3rem;
+    margin: 0;
+    flex-grow: 1;
+    padding-bottom: 0.5rem;
+}
+& .form-floating .form-control::placeholder {
+  color: #222;
+}
+& .btn-book-space .btnSubmit, 
+& .btn-book-space .btnReset {
+    border: 0;
+    border-radius: 5rem;
+    color: #fff;
+    font-size: .8rem;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    background-color: var(--black);
+    margin: 0 5px;
+    width: 95%;
+}
+& .btn-book-space .btnSubmit:hover{background:var(--theme-color500)}
+& [datatypeinput] .input-group-addon{
+    padding: 0 12px;
+}
+& .btn-book-space {
+    text-align: center;
+    width: 100%;
+    margin-top: 0.6rem;
+}
+`

@@ -1,0 +1,1 @@
+<template>Calendar Booking</template>

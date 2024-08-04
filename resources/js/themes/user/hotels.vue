@@ -1,0 +1,1 @@
+<template>Hotels</template>

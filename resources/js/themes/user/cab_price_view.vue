@@ -1,0 +1,1 @@
+<template>Cab price view</template>

@@ -1,0 +1,523 @@
+html{
+    --secondary-color: #162e44;
+}
+
+
+
+@media (max-width: 1920px){  
+}
+@media (max-width: 1710px){
+}
+@media (max-width: 1680px){
+}
+@media (max-width: 1550px){
+    html{font-size: 15px;}
+    .footer_logo img { max-height: 7rem; }
+    .topmain-header .header-logo img {height: auto;}
+}
+@media (max-width: 1450px){
+}
+@media (max-width: 1350px){
+}
+@media (max-width: 1280px){
+    html{font-size: 15px;}
+}
+@media (max-width: 1200px){
+}
+@media (max-width: 1199px){
+        .sidemenu-box { position: fixed; right: 0; top: 0; height: 100vh; padding: 2rem; z-index: 999; transition: all ease 0.5s; background-color: var(--white); transform: translateX(100%); min-width: 280px;overflow: auto;}
+    .sidemenu-box a { color: var(--black)!important; /*opacity: 0.8;*/ display: block;}
+    .sidemenu-box .theme-nav>li>a:hover, .sidemenu-box .has-dropdown>ul a:hover {color: #01b3a7 !important;}
+    .theme-nav { flex-direction: column;    margin-top: 2rem; }
+    .phone-menu { z-index: 5; display: block; margin-left: auto; cursor: pointer;  color: #fff;}
+    .phone-menu span {width: 24px;height: 2px;background-color: currentColor;display: block;transition: all ease .5s;}
+    .phone-menu span:nth-child(2) { margin: 6.5px 0; }
+    .header-backdroap { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);  z-index: 4; opacity: 0; pointer-events: none; transition: all ease 0.5s; }
+    .menu-opened .header-backdroap { opacity: 1; pointer-events: all; }
+    .menu-opened .sidemenu-box{transform: translateX(0);}
+    .phone-menu span{transform-origin: right;}
+    .menu-opened .phone-menu span:nth-child(1){ transform: rotate(-45deg); transform-origin: right; }
+    .menu-opened .phone-menu span:nth-child(2){ opacity: 0; }
+    .menu-opened .phone-menu span:nth-child(3){ transform: rotate(45deg); transform-origin: right; }
+    /* .menu-opened .phone-menu{color: var(--dark-grey);} */
+    .menu-opened { overflow: hidden; padding-right: 0px; }
+    .menu-item-has-children>ul, .has-dropdown>ul { position: static; transform: none; opacity: 1; background-color: transparent; pointer-events: all; transition: none;}
+    .menu-item-has-children:after, .has-dropdown:after{position: absolute; opacity: 0; pointer-events: none}
+    .dd-click { position: absolute; right: 0; top: 0.3rem; width: 2rem; height: 2rem; border: 1px solid var(--secondary-color); display: grid; place-items: center; z-index: 5; opacity: 0.6; cursor: pointer; }
+    .dd-click:before { content: ''; display: block; position: absolute;right: 8px;top: 5px; width: 9px; height: 9px; border-right: 2px solid var(--secondary-color); border-bottom: 2px solid var(--secondary-color); transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);}
+    .menu-item-has-children:hover>ul, .has-dropdown:hover>ul { transform: none; }
+    .menu-item-has-children>a { width: calc(100% - 3rem); min-width: auto!important; border: none!important;}
+    .theme-nav>li>a { padding: 0.55rem 1rem; border-bottom: 1px solid var(--theme-alpha); }
+    .menu-item-has-children, .has-dropdown {border-bottom: 1px solid var(--theme-alpha);}
+    .theme-nav>li:last-child { display: block; margin-left: 0; }
+    .sub-menu>li:nth-last-child(1)>a { border: none; }
+    
+    .slideOpened:before {     transform: rotate( 224deg );
+        color: var(--white);
+        top: 10px;}
+    .slideOpened{ color: var(--secondary-color);}
+    .menu-item .sub-menu .sub-menu a { min-width: auto; padding-left: 2rem; }
+    .menu-item .sub-menu .sub-menu { background-color: var(--theme-color-transparent1)!important; }
+    .theme-nav>li>a:hover { background-color: var(--theme-color); color: var(--white)!important; }
+    
+    .menu-top-menu-container { margin-bottom: 3rem; }
+    .user_login_before svg  { display: inline-block; fill: #fff;   margin-left: 0rem; }
+    .user_login_logged svg { margin-left: 0rem;}
+    /* .user_login a { font-size: 0; } */
+    .sub-menu { background-color: #dee2e6 !important; }
+    .theme-nav li:hover a { background-color: transparent !important;   color: var(--black) !important;  }
+    .has-dropdown>ul a { color: var(--black) !important;}
+    .user_login{ margin-left: 0.5rem;}
+    .menu-opened .phone-menu {position: absolute;right: 30px;z-index: 9999;}
+    header .theme-nav li#item_id_30 a:hover {background: #2c2d6c !important;}
+    header .theme-nav li#item_id_30 a {color: #fff !important;background: #01b3a7;}
+  
+    .flight_res_left { top: calc(var(--header-height) + var(--top-sec-height)); }
+    .flight_res_right { width: 100%; }
+    /* .sch2, .sch3, .sch4{display: none;} */
+    .flight_info_scroller{min-width: 53%;}
+    .flight_info_scroller{min-width: 20%;}
+    .modify_btn_sec button{padding: 0.4rem 0.6rem;}
+    .modify_btn_sec button i { display: none; }
+    .modify_btn_sec{margin-left: auto;}
+    .flight_res_left{position: fixed; display: none;}
+    .flight_res_sec, .flight_res_right { padding-left: 0; padding-right: 0; padding-top: 0; }
+    .search_inner_top_wrapper { width: 100%; }
+    /* .head_band { max-height: calc(100vh - var(--header-height)); overflow: auto; top: calc(var(--header-height) - 2px);} */
+    
+}
+@media (max-width: 998px){
+    .topmain-header ul.menu_list li a {
+        white-space: nowrap;
+    }
+    .more-menu ul.theme-nav li.has-dropdown a:after {
+        opacity: 0;
+    }
+    .more-menu ul.theme-nav {
+        margin-top: 0;
+    }
+    .topmain-header .more-menu ul.theme-nav li span.dd-click {
+        right: 0.3rem;
+        border-color: #fff;
+    }
+    .topmain-header .more-menu ul.theme-nav li span.dd-click::before {
+        border-color: #fff;
+        right: 0.6rem;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .theme-nav li.has-dropdown>a:after {
+        font-size: 0 !important;
+    }
+
+    .hotel_bookinglist .side_bar {
+        position: inherit;
+        height: auto;
+    }
+    .bikecard_list .select-wrapper {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 767px){    
+    .flight_form { flex-direction: column; position: relative;}
+    .flight_form>.select_from_wrap, .select_to_wrap{ width: 100%; }
+    .swap-icon { margin: -0.7rem 0; }
+    .ssb-wrap { max-width: 100%; width: 100%; padding: 0; margin: 0.7rem 0; }
+    .ssb-wrap.round_trip{max-width: 100%; width: 100%;}
+    .ssb-wrap:not(.round_trip) .date_wrap .date_input { width: 100%; }
+    .search_btn { margin-top: 1rem; margin-left: 0; }
+    .search_btn button { padding: 0.7rem 1.6rem; }
+    .ssb-wrap.round_trip .date_wrap { width: 50%; }
+    .ssb-wrap.round_trip .date_input { width: 100%; }
+    .form_item { flex-direction: column; }
+    .form_item .select_from_wrap { width: 100%; }
+    .form_items_wrap .form_item .ssb-wrap { width: 100%; }
+    .form_items_wrap .form_item .ssb-wrap .date_wrap { width: 100%; }
+    .search_btn:empty { display: none; }
+    .flight_form>.multicity_trip~.search_btn { position: absolute; bottom: 0; left: 0; }
+    .multicity_trip~.form_items_wrap .form_item .search_btn { padding-left: 7rem; text-align: right; }
+    .passenger_pop { flex-direction: column; }
+    .flight_table.search_table_inr element { white-space: nowrap; overflow: auto; width: 100%; display: block; }
+    .bottom_action_bar .container{overflow: auto;}
+    .flight_page .font36 { line-height: 1.2; font-size: 1.8rem; }
+    .flight-banner{padding: 1rem 0 2rem;}
+    .flight_table.search_table_inr { white-space: nowrap; overflow: auto; }
+    .ssb-wrap:not(.round_trip) { max-width: 100%; }
+    .close_passenger{transform: translate(0, -16rem);}
+    header.theme_header a.header-logo img {height: 30px !important;}
+    .flight_page .head-search {margin: 3% 0% 2%;padding: 50px 15px 25px;}
+    .car-module .flight-banner .container {max-width: 100%;}
+    .car-module .head-search ul.menu_list li a { font-size: 11px;}
+    .car-module .head-search ul.menu_list li a .fa, .flight_page .head-search ul.menu_list li a .fa {font-size: 22px; padding-bottom: 7px;}
+    .car-module .head-search ul.menu_list li a, .flight_page .head-search ul.menu_list li a {font-size: 11px;display: table-caption;text-align: center;line-height: normal; }
+    .car-module ul.menu_list {width: 80%;}
+    .flight_page ul.menu_list {width: 88%;}
+    header.theme_header.sml-header.scrolling-up a.header-logo img {height: 2.3rem;}
+    .car-module .book_flight_form .passenger_wrap { margin-top: 10px;margin-bottom: 5px;}
+    .book_flight_form.trip-type-3 form.flight_form >.trp_box:nth-child(1) {margin-bottom: 0px;}
+    .book_flight_form.trip-type-3 form.flight_form .trp_box:nth-child(5) {margin-top: 10px;}
+    .main-header .user_login a.btn i.iconmobile {font-size: 25px;}
+    .main-header .user_login a.btn {font-size: 0;padding: 0;}
+    .main-header header {padding: 0.5rem 1rem;}
+    .main-header .theme_header .phone-menu span:nth-child(2) {position: relative;left: 3px;}
+    .flight_page .head-search form.flight_form {display: block;}
+    .car-module .book_flight_form.trip-type-3 .trp_box .trip-type {width: 100%;}
+    .book_flight_form form.flight_form .trp_box:nth-child(5) {width: 49%;display: inline-block;float: right;}
+    .ssb-wrap:not(.round_trip) {max-width: 48%;display: inline-block;}
+    .car-module .book_flight_form .passenger_wrap {width: 48%;display: inline-block;float: right;}
+    .ssb-wrap.round_trip {max-width: 49%;width: 49%;display: inline-block;}
+    .swap-icon {left: 50%;}
+    body:not(.car-module) .ssb-wrap:not(.round_trip) {max-width: 100%;margin-bottom: 18px;}
+    body:not(.car-module) .ssb-wrap.round_trip {width: 100%;max-width: 100%;}
+    body:not(.car-module) .ssb-wrap.round_trip .date_wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    body:not(.car-module) .ssb-wrap.round_trip .date_wrap input.date_input {
+        font-size: 0.8rem;
+    }
+    .ssb-wrap:not(.round_trip) .date_wrap .date_input {
+        font-size: 0.8rem;
+    }
+    .flight_page .flight-banner .book_flight_form form.flight_form .search_btn {
+        margin-top: 1.5rem;
+    }
+    .flight_page .flight-banner .book_flight_form form.flight_form .form_items_wrap .form_item {
+        display: block;
+        margin-top: 1rem;
+    }
+    .flight_page.search_list_flight .head_band .flight_info_scroller, .flight_page.search_list_flight .head_band .sch2, .flight_page.search_list_flight .head_band .sch3, .flight_page.search_list_flight .head_band .sch4 {
+        min-width:-moz-fit-content;
+        min-width:fit-content;
+      }
+    .search_list_flight .flight_search_detail {
+        overflow-y: scroll;
+        justify-content: flex-start !important;
+    }
+    .search_list_flight .flight_search_detail .flight_info_scroller {
+        min-width: 60%;
+    }
+    .search_list_flight .flight_search_detail .sch2, .search_list_flight .flight_search_detail .sch3, .search_list_flight .flight_search_detail .sch4, .search_list_flight .flight_search_detail .modify_btn_sec {
+        min-width: 40%;
+    }
+    .car-module .flight_res_sec .flight_res_wrap .flight_res_right .flight_table.search_table_inr .cab_results tr td.price_bg {
+        width: 8rem !important;
+        justify-content: center;
+    }
+    .car-module .flight_res_sec .flight_res_wrap .flight_res_right .flight_table.search_table_inr .cab_results tr td.price_bg h4 {
+        font-size: 1rem;
+    }
+    /* =========== Cab Css ============= */
+    .car-module .inner_banner.search_cab .flight_search_detail {
+        overflow: scroll;
+    }
+    .car-module .inner_banner.search_cab .flight_search_detail .flight_info_scroller {
+        /* min-width: 65%; */
+        min-width: -moz-fit-content !important;
+        min-width: fit-content !important;
+    }
+    img.img-ss {
+        height: 5rem !important;
+    }
+    .car-module .inner_banner.search_cab .flight_search_detail .sch2 {
+        min-width:35%;
+    }
+    .car-module .inner_banner.search_cab .flight_search_detail .modify_btn_sec {
+        min-width:30%;
+        padding-left: 1rem;
+    }
+    .footer_bottom_inner{
+        padding: 0 15px;
+    }
+    .sightseen_cardlist table tbody tr {width: 850px;display: inline-block;overflow-x: scroll;}
+    .sightseen-tripType {padding: 0 1rem;}
+    .shapeType2 {
+        line-height: 1.3rem;
+    }
+    .inner_banner.search_cab .search_inner_top_wrapper form.flight_form {
+        display: flex;
+        flex-direction: row;
+        gap: 0 0.5rem;
+    }
+    .inner_banner.search_cab .search_inner_top_wrapper form.flight_form .ssb-wrap .date_wrap input.date_input {
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+    }
+    .inner_banner.search_cab .search_inner_top_wrapper form.flight_form >.trp_box:nth-child(1) {
+        width: 100%;
+    }
+    .inner_banner.search_cab .search_inner_top_wrapper form.flight_form > .select_from_wrap{
+        margin-right: 0rem;
+    }
+    .inner_banner.search_cab .search_inner_top_wrapper form.flight_form i.dropdown.icon, .inner_banner.search_cab .search_inner_top_wrapper form.flight_form i.fa-caret-down {
+        font-size: 1rem;
+    }
+    .car-module .step_forms, .car-module .fare-summary{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    #app .step_contents .step_forms, #app .step_contents .fare-summary {
+        width: 100%;
+        padding: 0 0rem;
+        border: 0;
+    }
+    #app .step_contents .container{
+        display: inline-block;
+    }
+    .steps_sec .steps-nav{
+        overflow: auto;
+    }
+    #app .step_contents .step_forms .stp_wrap .rts_flight .fts_top {
+        overflow: auto;
+    }
+    #app .step_contents .step_forms .stp_wrap .rts_flight .fts_top .fls_tbl *, .steps_sec .steps-nav li.step-item {
+        white-space: nowrap;
+    }
+    #app .step_contents .step_forms .stp_wrap .rts_flight .fts_top .fls_tbl td{
+        padding: 0 10px;
+    }
+    .step_contents .step_forms .stp_wrap .rts_flight .minimal_detail_box{
+        width: 50rem;
+    }
+    #app .step_contents .step_forms .stp_wrap .rts_flight .fts_top .fls_tbl .flight_detail{
+        padding-right:1rem;
+    }
+    .bottom_action_bar .container {
+        justify-content: flex-start;
+    }
+    .bottom_action_bar .container table tr td * {
+        padding-right: 1rem;
+        white-space: nowrap;
+    }
+    .bottom_action_bar .container table tr td .mnt_wrap img {
+        padding-right: 0;
+    }
+    .user_login {
+        margin-top: 0.5rem;
+    }
+    .sightseen_cardlist table tbody tr td:nth-child(2) {
+        width: 25rem !important;
+    }
+
+/* ========   Flight .search Form style  =========== */
+.flight_page .flight-banner .book_flight_form form.flight_form .selection.dropdown i.dropdown.icon {
+    right: 0.8rem !important;
+    font-size: 1rem;
+    top: 0.5rem !important;
+}
+.flight_page .flight-banner .book_flight_form form.flight_form .selection.dropdown::before {
+    margin-left: 0;
+}
+.main-header { position: relative; z-index: 999999; }
+.headerType2 .flight_page.search_list_flight .head-search{padding: 50px 15px 25px;}
+.headerType2 .topmain-header {display: none !important;}
+.headerType2 .main-header{display: block;}
+.headerType2 .flight_page.search_list_flight .flight-banner .head-search ul.menu_list{display: flex!important;}
+/* .user_login {width: 9rem;} */
+.balance {bottom: auto;top: -12px;}
+.shapeType1:before {border-top: 9px solid transparent;border-bottom: 10px solid transparent;}
+
+
+.searchBook_form .head-search {
+    margin: 0% 2% 0;
+    padding: 35px 15px 25px;
+}
+.packaging_wrap .packaging_wrap_inner .packaging_view {
+    margin-top: 0rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+.packaging_view_box_top .images a {
+    width: 100%;
+}
+.packaging_wrap.p_list_view .package_top {
+    width: 100%;
+}
+.holiday_package .btn {
+    font-size: 0.8rem;
+    /* line-height: normal; */
+    border-radius: 5rem;
+    padding: 0.4rem 0.5rem;
+}
+.right_price_box {
+    width: 100%;
+    order: 2;
+}
+.left_price_box {
+    height: 400px;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+.package-detail-page .single_package_details {
+    padding-top: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+#myForm .theme_title h1.title {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+.package-detail-page .text-base {
+    font-size: 0.7rem;
+}
+.city-list-block .package_tour_type_text {
+    margin-right: 0.5rem;
+}
+.right_price_box ul.form_list.w-full.float-left .form_group.icon_calender {
+    padding-left: 0!important;
+    margin-top: 0px;
+}
+fieldset.scheduler-border.booking_fields.w-full {
+    padding: 0.5rem 1rem;
+}
+.right_price_box ul.form_list {
+    padding-bottom: 1rem;
+}
+.booking_fields .single_package_white {
+    padding: 0;
+}
+/* .booknow_btn .price_box:first-child span {
+    font-size: 1.3rem;
+} */
+.booknow_btn ul.btn_group.listing_btn li a.btn2 {
+    font-size: 0.8rem;
+}
+.inclusions_share .left_side.w-6\/12, .inclusions_share .share-section.w-6\/12 {
+    width: 100%;
+}
+.share-section .bg_share p {
+    display: inline-block;
+    padding-left: 0;
+    width: 100%;
+}
+.row-cols-2.w-70.pr-9 {
+    padding-right: 0;
+}
+.packaging_wrap_inner .side_bar {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+    padding-bottom: 122px;
+    z-index: 999;
+    border-radius: 0;
+    overflow: auto;
+    height: 100%;
+}
+.packaging_view_box_top .images {
+    padding-right: 0;
+    max-width: 100%;
+    width: 100%!important;
+}
+.packaging_view_box_top {
+    flex-wrap: wrap;
+    /* padding-right: 0; */
+    width: 100%;
+}
+.packaging_view_box_top .images img {
+    width: 100%;
+}
+.packaging_view .packaging_view_box .packaging_info {
+    padding: 15px 0;
+}
+.packaging_view_box_top .price, .grid_gallery_row .right_area .gallery_wrapper {
+    width: 100%;
+}
+.packaging_wrap.p_list_view .package_top .package_disc {
+    margin: 0rem 0 0.5rem;
+}
+.packaging_wrap .packaging_wrap_inner .packaging_view .packaging_top .title {
+    font-size: 0.8rem;
+}
+.sort_by {
+    min-width: 100%;
+    margin-top: 0.5rem;
+}
+.packaging_top {
+    flex-wrap: wrap;
+}
+.packaging_wrap.p_list_view .packaging_info .pac_disc .list_row_right ul.activ_list li {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    line-height: normal;
+}
+.packaging_view_box .price_inner.mb-2 {
+    padding: 5px;
+}
+.single_btn ul .traveller_pricing_inner {
+    width: 50%;
+}
+.package-detail-page .single_package_details .row-cols-2.w-30 {
+    width: 100%;
+}
+.similar_activity {
+    margin: 0 1.5rem;
+}
+.hotel_inner_slider .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+}
+.fc .fc-toolbar-title {
+    font-size: 1.2em;
+}
+.fullCalander_pop_wrap .popup_wrap {
+    max-width: 350px;
+}
+.fc .fc-button {
+    padding: 0.4em 0.35em;
+}
+.head-search ul.menu_list li a i.fa, .head-search ul.menu_list li a i {font-size: 1.3rem !important;}
+.gDCLWd.book_flight_form.book_flight_form .ssb-wrap:not(.round_trip) {max-width: 100%;}
+.gDCLWd.book_flight_form.book_flight_form .passenger_wrap {width: 100%;float: inherit;}
+.gDCLWd .ssb-wrap.round_trip .date_wrap:first-child .date_input {border-right: 1px solid rgba(34,36,38,.15);}
+.gDCLWd .ssb-wrap.round_trip {width: 100% !important;max-width: 100%;}
+.theme_form.allbooking_form form#book_now_form .form_price .w-4\/6, .theme_form.allbooking_form form#book_now_form .form_price .right_sec.w-2\/6 {width: auto;padding-right: 0;}
+.theme_form.allbooking_form form#book_now_form .form_price {display: block;}
+.theme_form.allbooking_form form#book_now_form .form_price .right_sec.w-2\/6 {padding-right: 1.2rem;}
+.modal-body.download-itinerary { width: 25rem;}
+.car-module .jAdRgE .flight_res_wrap .flight_res_right {width: 100% !important;}
+.car-module .jAdRgE .flight_res_wrap {margin: 0;}
+.car-module.flight_detail_page .step_forms .stp_wrap .rts_flight {padding: 10px;}
+.flight_detail_page  #app .step_contents .step_forms .stp_wrap .rts_flight .fts_top {padding-left: 0;}
+.holiday_package .packaging_view_box .btn {font-size: 0.8rem;padding: 0.6rem 0.8rem !important;line-height: normal;}
+#search_hotels_form .header-top-search {display: inline-block;}
+#search_hotels_form .header-top-search .selectoption {margin-bottom: 0.5rem;}
+#search_hotels_form .header-top-search .selectoption label {font-size: 0.8rem;}
+form#search_hotels_form .selectoption .mapicon, form#search_hotels_form .selectoption i { top: 2rem; height: 1rem;}
+form#search_hotels_form .selectoption .search_hotels {height: auto;}
+.passenger_wrap button.btn2 {line-height: normal;padding: 0.5rem 1rem;}
+.bg_share {padding: 0 0px !important;}
+.package-detail-page .package_disc h2.text-base {font-size: 1.2rem; padding: 0rem 1rem 0 0;}
+.right_price_box ul.form_list li.w-2\/4 {padding: 0.5rem;}
+#bookNowForm .booknow_btn .btn_group {display: flex; width: 100%;justify-content: center;}
+#myForm .booknow_btn .btn_group input.btn {margin-top: 0.4rem;}
+.booknow_btn .btn_group li {padding: 0 0.5rem;}
+.departure_single {padding: 2rem 1.5rem !important;}
+.hotel_bookinglist .side_bar #adv_hotel_search >.acco_category.checkbox_list {width: 49%;}
+section.single_package_details .grid_gallery_row .right_area .gallery_wrapper a.gallery_popup img.img_responsive {height: 4.8rem;}
+.hotel_class .single_package_details .grid_gallery_row .left_area img {height: 15rem;}
+.hotel_class .view-more-img .view-more-text {font-size: 1rem;}
+.hotel_class .hotel-wrapper-content-tab ul.tabs {overflow: scroll;}
+section.single_package_details .grid_gallery_row .right_area .gallery_wrapper::after{height: 4.8rem;}
+section.related-hotel ul.featured_list.flex.flex-wrap{flex-wrap:wrap}
+.related-hotel .featured_list>li{width:45.3%!important}
+.room_type>ul>li{display:block;}
+.compact-room-img{width:100%}
+li>.room-options{width:100%;border-left:0}
+.room_type>ul>li:first-child{display:none}
+ul.mobile-show{display:block}
+.testimonial_slider .testimage .swiper-slide img { height: auto !important;}
+.testimonial_slider .testcont {width: 100% !important;}
+.way_book_section .new_box_title_heading span {font-size: 1.2rem;line-height: normal;}
+.hotel_bookinglist .side_bar #adv_hotel_search >.acco_category.checkbox_list .acco_category.checkbox_list {display: block;}
+.hotel_bookinglist .side_bar #adv_hotel_search >.acco_category.checkbox_list .title, .hotel_bookinglist .side_bar #adv_hotel_search .traveller_rating .title {font-size: 1.2rem;}
+.hotel_bookinglist .side_bar #adv_hotel_search .traveller_rating {display: block;} 
+.bike-list-view .bikecard_list .topimg img {height: 12rem;}
+
+
+}

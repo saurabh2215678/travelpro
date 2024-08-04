@@ -1,0 +1,105 @@
+@media (max-width: 1500px){
+    .container-xl { max-width: calc(1200px + var(--bs-gutter-x)); }
+    /* .container { max-width: calc(1200px + var(--bs-gutter-x)); } */
+    html{font-size: 15px;}
+}
+@media (max-width: 1350px){
+    .container-xl { max-width: calc(1100px + var(--bs-gutter-x)); }
+    .container { max-width: calc(1100px + var(--bs-gutter-x)); }
+    html{font-size: 14px;}
+}
+
+@media (max-width: 1200px){
+    .container-xl { max-width: calc(1000px + var(--bs-gutter-x)); }
+    .container { max-width: calc(1000px + var(--bs-gutter-x)); }
+    html{font-size: 13px;}
+    .slider_btns{display: none!important;}
+    /* .headsearchbg, .core_featured_list, .blog_right { padding: 0 2rem; } */
+    header{padding: 1.5rem 1rem;}
+}
+
+@media (max-width: 767px){
+    section { padding: 3.7rem 0;}
+    .packaging_view { margin-top: 0; }
+    .headsearch { bottom: 5rem; }
+    .banner_slider { opacity: 0.35; }
+    .banner_img { height: 31rem; object-fit: cover; }
+    .core_featured_list { flex-direction: column; }
+    .feature_right p br { display: none; }
+    .core_featured_list li:not(:last-child) { margin-bottom: 1.7rem; }
+    .feature_left { width: 3rem; }
+    .indian_destination { height: auto; width: 100%; }
+    .destination_explore_search{width: 100%;}
+    .headsearchbg form .font23 { line-height: 1.3; }
+    /* .headsearchbg, .core_featured_list, .blog_right{padding: 0;} */
+    .headsearch { bottom: auto; top: 50%; transform: translateY(-50%); padding-top: 5rem; }
+    .headsearchbg form .font45 { font-size: 1.9rem; }
+    .headsearchbg form .font23 { line-height: 1.3; font-size: 1.3rem; }
+    .destination_explore_search>.select2{    height: 3.1rem;}
+    header.theme_header a.header-logo img { width: 11rem; }
+    .indian_destination { height: auto!important;margin: 0; }
+    .font30.fw600.color_secondary { font-size: 1.3rem; width: calc(100% - 8rem);font-weight: 500!important; margin-bottom: 0.9rem;}
+    .swiper-slide a.package_card { width: calc(100% - 16px); }
+    .top_image_box img { width: 100%; }
+    .blog_box p{display: block;}
+    section.home_blog.home_featured.ftr_1 { background-position: 63% center; }
+    /* .indian_destination {
+        max-width: 50%;
+        padding: 0;
+        margin-bottom: 0rem;
+    } */
+    .text-center.mb-6.padding_x { display: flex; margin-bottom: 0;}
+    .text-center.mb-6.padding_x h1 { text-align: left; }
+    .footer_wrap { flex-direction: column; }
+    .footer_wrap .ftr_col:first-child { width: 100%; margin-bottom: 2rem; }
+    footer .theme-nav { display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 0; gap: 0 1rem;}
+    footer .theme-nav li { width: calc(50% - 0.5rem); }
+    .footer_wrap .ftr_col:nth-child(2) { margin-bottom: 3rem; }
+    .ftr_col:last-child { width: 100%; }
+    .home_featured .arrow_btn.mx-auto { margin-right: 0!important; }
+    footer{padding: 3rem 0 2.5rem;}
+
+
+    .theme_header+.inner_banner { height: auto; }
+    .inner_banner_main img { position: static; }
+
+
+    .header_inner_banner_main img { height: 12rem; }
+    .blog_single_top {padding: 0;}
+    .packaging_view_box_top { flex-direction: column; }
+    .recommendation_place .theme_listing { padding: 0; }
+    ul.theme_listing { padding-left: 0; }
+    .destination_testi .testimonial-item { width: 100%; }
+    body.experiences .tab-panel { padding-bottom: 0; padding-top: 0; }
+    .price .right_side .btn:not(:last-child) { margin-right: auto; }
+    .packaging_view_box_top .images { width: 100%!important; border-radius: 8px!important; display: flex; }
+    .packaging_view_box_top .packaging_info, .testimonials_class .packaging_view .packaging_view_box .packaging_info { flex-direction: column; width: 100%!important; }
+    .package_top { width: 100%; margin-bottom: 1rem; }
+    .single_package_details .theme_title .title { width: 100%; }
+    section.home_blog.home_featured.ftr_1 { padding: 3rem 0.5rem; }
+    .theme_listing li { width: 50%; padding: 0 0.3rem!important; margin-bottom: 0.6rem; }
+    ul.theme_listing, .recommendation_place .theme_listing { padding: 0 0.7rem; }
+    .recommendation_place.destination-cat.pb_150 .mb50 { margin-bottom: 2rem; }
+    .package_content .font20 { padding-right: 0; }
+    /* .destination-slider .theme_title.mb-4 { margin-bottom: 0!important; } */
+    section.destination-slider+section.destination-slider { padding-top: 0; }
+    .desti_about_img img { width: 100%; height: auto; margin-left: 0; }
+    .destination_about_content{width: 100%;}
+    .desti_about_img { margin-bottom: 0; float: unset;width: 100%;    max-width: initial;}
+    .destination_about_content .text-justify, .destination_about_content .text-justify * { text-align: left!important; font-size: 1.1rem!important; }
+    .destination-slider.destination_testi .theme_title.mb-6 { margin-bottom: 1rem; }
+    .bg_tesi_box .text-sm { font-size: 1.05rem; line-height: 1.5; }
+    .customer_name_img.mt-5 { margin-top: 1.5rem!important; }
+
+
+    .package_heading { font-size: 1.45rem; }
+    .theme_title p.day_night_detail { margin-bottom: 0; }
+    .testimonials_class .single_package_details .share-section { display: none; }
+    .location_name { margin-top: 0; }
+    .pack-category .tour_category_box .images{height: 167px;}
+    .pack-category .tour_category_box .images{    height: 167px;}
+    .contact-us .gray_add_box .w-2\/5 {width: 100%;}
+    .recommendation_place .theme_listing li>.text { margin-bottom: 0!important; }
+    .destination-slider {overflow: hidden;}
+    .destination-slider .featured_list {overflow: visible;}
+}

@@ -1,0 +1,1 @@
+<template>Rental Voucher View</template>
