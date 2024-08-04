@@ -15,4 +15,4 @@ jobs:
         username: admin_incredeble
         password: ${{ secrets.FTPPASSWORD }}
         protocol: ftps
-        server-dir: travelpro
+        server-dir: travelpro/
